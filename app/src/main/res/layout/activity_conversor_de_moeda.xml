@@ -57,7 +57,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_weight="10"
-        android:text="Calculate"
+        android:text="Calcula"
         android:textColor="@color/white"
         android:background="@drawable/button_selector"/>
 
