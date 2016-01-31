@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Conversor De Moedas</string>
-    <string name="action_settings">Configuração</string>
+    <string name="action_settings">pesquisando codigos ativos</string>
     <string name="title_activity_splash">SplashActivity</string>
 </resources>
