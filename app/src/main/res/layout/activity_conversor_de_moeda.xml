@@ -58,8 +58,7 @@
         android:layout_marginRight="10dp"
         android:layout_weight="10"
         android:text="Calcula"
-        android:textColor="@color/white"
-        android:background="@drawable/button_selector"/>
+        android:textColor="@color/white"/>
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -68,7 +67,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:text="Home Currency"
+            android:text="Minha Moeda"
             style="@style/label.curr"/>
 
         <Spinner
@@ -81,7 +80,7 @@
             android:gravity="top"/>
 
         <TextView
-            android:text="Calculated result in home currency:"
+            android:text="Resultado calculado na minha moeda:"
             style="@style/label.desc"/>
     </LinearLayout>
 
