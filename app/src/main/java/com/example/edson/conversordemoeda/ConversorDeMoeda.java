@@ -112,19 +112,12 @@ public class ConversorDeMoeda extends AppCompatActivity implements AdapterView.O
         mForSpinner.setOnItemSelectedListener(this);
 
         //set to shared-preferences or pull from shared-preferences on restart
-        //SharedPreferences userDetails = context.getSharedPreferences("userdetails", MODE_PRIVATE);
-        //String moedaEstrangeira = userDetails.getString("moedaEstrangeira", "");
-        //String minhaMoeda = userDetails.getString("minhaMoeda", "");
         if (savedInstanceState == null
-           //     && (PrefsMgr.getString(this, FOR) == null &&
-           //     PrefsMgr.getString(this, HOM) == null)
-           ) {
+                && (PrefsMgr.getString(this, FOR) == null &&
+                PrefsMgr.getString(this, HOM) == null)) {
 
-            mForSpinner.setSelection(findPositionGivenCode("CNY", mCurrencies));
-            mHomSpinner.setSelection(findPositionGivenCode("USD", mCurrencies));
-
-           // PrefsMgr.setString(this, FOR,"CNY");
-           //PrefsMgr.setString(this, HOM,"USD");
+           PrefsMgr.setString(this, FOR,"CNY");
+           PrefsMgr.setString(this, HOM,"USD");
 
 
         } else {
