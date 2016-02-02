@@ -49,11 +49,10 @@ public class ConversorDeMoeda extends AppCompatActivity implements AdapterView.O
     private String mKey;
     //used to fetch the 'rates' json object from openexchangerates.org
     public static final String RATES = "rates";
-    public static final String URL_BASE =
-            "http://openexchangerates.org/api/latest.json?app_id=";
+    //https://openexchangerates.org/api/latest.json?app_id=f0ec339528da40cbb7836d39b8643cbb
+    public static final String URL_BASE = "http://openexchangerates.org/api/latest.json?app_id=";
     //used to format data from openexchangerates.org
-    private static final DecimalFormat DECIMAL_FORMAT = new
-            DecimalFormat("#,##0.00000");
+    private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("#,##0.00000");
 
     //create this interface for instrumentation testing with threads
     private CurrencyTaskCallback mCurrencyTaskCallback;
@@ -188,7 +187,7 @@ public class ConversorDeMoeda extends AppCompatActivity implements AdapterView.O
         return (currency).substring(0,3);
     }
 
-    private String getKey(String keyName){
+    public String getKey(String keyName){
         AssetManager assetManager = this.getResources().getAssets();
         Properties properties = new Properties();
         try {
